@@ -7,6 +7,11 @@
 # `~/.claude/skills` so they are available for the session.
 #
 # It runs only in the remote (web) environment; local sessions are left alone.
+#
+# Runs in async mode: the session starts immediately while the clone/copy
+# happens in the background. Skills may lag a few seconds behind session
+# start; if you need them guaranteed-ready before the first turn, drop the
+# async line below to make it synchronous.
 
 set -uo pipefail
 
@@ -14,6 +19,9 @@ set -uo pipefail
 if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
   exit 0
 fi
+
+# Return control to the session right away; keep working in the background.
+echo '{"async": true, "asyncTimeout": 300000}'
 
 DEST="${HOME}/.claude/skills"
 mkdir -p "$DEST"
