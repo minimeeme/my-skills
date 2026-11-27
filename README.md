@@ -842,6 +842,34 @@ pip install opencv-python numpy pillow --break-system-packages
 - 작은 영역 제거에 최적화
 - 자동 마스크 생성 및 inpainting
 
+### 20. [ELI5](./skills/eli5/) 🆕
+어떤 주제·코드·개념·에러든 듣는 사람의 수준에 맞춰 설명해 주는 스킬입니다. 대상에 따라 어휘, 비유, 말투, 깊이, 관점을 조절합니다.
+
+> 출처: [DreambigOu/ELI5](https://github.com/DreambigOu/ELI5) (MIT License) — `SKILL.md`를 원본 그대로 가져왔습니다.
+
+**지원 대상:**
+- 나이: 5세, 10세, 15세, 20~30대, 40대 이상
+- 학력: 초등 5학년, 중학생, 고등학생, 대학생, 대학원생
+- 직무: 매니저, 엔지니어, 디자이너, 디렉터, 동료, PM
+- 관계: 배우자, 부모님, 아이, 친구
+
+**동작 방식:**
+1. 요청에서 설명 대상을 파악 (명시하지 않으면 기본값은 5세)
+2. 설명할 코드·개념·에러를 먼저 이해
+3. "무엇인지 → 비유 → 세부 내용 → 왜 중요한지" 순서로 설명
+
+**사용 예시:**
+```
+"ELI5 what a database index is"
+"Explain this code to my manager"
+"Break down how git merge conflicts work for a 5th grader"
+"Explain this error to my mom"
+```
+
+**참고:**
+- 스킬 본문과 트리거 문구가 영어로 작성되어 있습니다
+- 원본 저장소의 평가 도구(`eli5-workspace/`)는 가져오지 않았습니다
+
 ## 스킬 사용 방법
 
 ### 방법 1: 마켓플레이스를 통한 설치 (권장)
@@ -1073,6 +1101,7 @@ my-skills-hub/
 - [Design Prompt Generator V2 상세 정보](./skills/design-prompt-generator-v2/SKILL.md)
 - [Design Prompt Generator V2 샘플](./skills/design-prompt-generator-v2/sample/)
 - [Web Search 상세 정보](./skills/web-search/SKILL.md)
+- [ELI5 상세 정보](./skills/eli5/SKILL.md)
 
 ## 기여
 
